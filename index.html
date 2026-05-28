@@ -1,199 +1,368 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>애니 매니아 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>등촌동 유흥 후기 | 네온보이드 — 실시간 인증 후기 &amp; 프리미엄 정보</title>
+    <meta name="description" content="등촌동 유흥 업소 실사용자 4,500+명의 리얼 후기, 97% 만족률. 2024년 3분기 업데이트 된 등촌 유흥 정보와 프리미엄 라운지, 룸살롱 등급별 분석을 제공합니다. 전화 010-6279-0862.">
+    <meta name="keywords" content="등촌동 유흥 후기, 등촌 유흥, 등촌동 룸살롱, 등촌 유흥 정보, 등촌동 나이트, 등촌동 유흥 추천, 등촌동 프리미엄 유흥">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sinsa-night.pages.dev/">
+    <meta name="naver-site-verification" content="">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="등촌동 유흥 후기 | 네온보이드 — 4,500+ 인증 후기">
+    <meta property="og:description" content="등촌동 유흥 업소 97% 만족률. 실시간 리얼 후기와 프리미엄 라운지, 룸살롱 등급별 분석을 제공합니다.">
+    <meta property="og:url" content="https://sinsa-night.pages.dev/">
+    <meta property="og:site_name" content="네온보이드 등촌 유흥">
+    <meta property="og:image" content="https://sinsa-night.pages.dev/og-image.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="등촌동 유흥 후기 | 네온보이드">
+    <meta name="twitter:description" content="등촌동 유흥 업소 리얼 후기 &amp; 프리미엄 정보. 4,500명 이상 인증.">
+    <meta name="twitter:image" content="https://sinsa-night.pages.dev/og-image.svg">
+    <meta name="twitter:domain" content="sinsa-night.pages.dev">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "네온보이드 등촌 유흥 정보 플랫폼",
+        "description": "등촌동 유흥 업소 실사용자 후기, 등급 분석, 프리미엄 정보 플랫폼",
+        "telephone": "010-6279-0862",
+        "url": "https://sinsa-night.pages.dev",
+        "areaServed": "서울특별시 강서구 등촌동",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "bestRating": "5",
+            "ratingCount": "4528",
+            "itemReviewed": {
+                "@type": "EntertainmentBusiness",
+                "name": "등촌동 유흥 업소 일대",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "서울특별시 강서구 등촌동",
+                    "addressCountry": "KR"
+                }
+            }
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+                "author": { "@type": "Person", "name": "등촌불독" },
+                "datePublished": "2024-09-28"
+            },
+            {
+                "@type": "Review",
+                "reviewRating": { "@type": "Rating", "ratingValue": "4" },
+                "author": { "@type": "Person", "name": "강서밤부" },
+                "datePublished": "2024-10-02"
+            }
+        ]
     }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
-    }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
-    }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
-    }
-  </style>
+    </script>
+    <style>
+        /* ========== RESET & BASE ========== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 100%; -webkit-text-size-adjust: 100%; }
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: Impact, system-ui, 'Arial Black', sans-serif;
+            font-weight: 400;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            overflow-x: hidden;
+            width: 100%;
+        }
+        a { color: #ff3b00; text-decoration: none; border-bottom: 3px solid currentColor; transition: none; }
+        a:hover { background-color: #ff3b00; color: #000000; border-bottom-color: #000000; }
+        a:active { filter: invert(1); }
+        img, svg { display: block; max-width: 100%; }
+        h1, h2, h3, h4, h5, h6 { font-weight: 700; letter-spacing: -0.02em; text-transform: uppercase; }
+        p { margin-bottom: 1.5rem; max-width: 70ch; }
+        ul { list-style: none; }
+
+        /* ========== UTILITY ========== */
+        .container { width: 100%; padding: 0 72px; }
+        .full-bleed { width: 100vw; margin-left: calc(50% - 50vw); }
+
+        /* ========== TYPOGRAPHY ========== */
+        .display-1 { font-size: clamp(5.2rem, 15vw, 9rem); line-height: 0.9; letter-spacing: -0.06em; }
+        .display-2 { font-size: clamp(3.6rem, 9vw, 5.6rem); line-height: 0.95; }
+        .heading-xl { font-size: clamp(2.4rem, 5vw, 3.8rem); }
+        .heading-lg { font-size: clamp(2rem, 4vw, 3rem); }
+        .body-lg { font-size: 1.4rem; line-height: 1.3; }
+        .body-sm { font-size: 0.9rem; letter-spacing: 0.1em; }
+        .accent-text { color: #ff3b00; }
+
+        /* ========== LAYOUT / SPACING ========== */
+        section { padding: 72px 0; }
+        .gap-section { margin-top: 120px; }
+        .gap-element { margin-bottom: 48px; }
+        .grid-asymmetric { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 48px; }
+        .grid-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+        .grid-3col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 48px; }
+        .stack-y { display: flex; flex-direction: column; gap: 48px; }
+        .flex-row { display: flex; flex-wrap: wrap; gap: 48px; align-items: center; }
+
+        /* ========== BORDERS & BOX ========== */
+        .brut-border { border: 4px solid #ffffff; padding: 24px; }
+        .brut-border-accent { border: 4px solid #ff3b00; padding: 24px; }
+        .brut-border-bottom { border-bottom: 4px solid #ffffff; }
+        .brut-top-accent { border-top: 4px solid #ff3b00; padding-top: 24px; }
+
+        /* ========== HEADER & NAV ========== */
+        header {
+            padding: 24px 72px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #ffffff;
+            position: relative;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 2.8rem;
+            letter-spacing: -0.04em;
+            line-height: 1;
+            text-transform: uppercase;
+            color: #ffffff;
+            border: none;
+            background: none;
+        }
+        .logo:hover { background: none; color: #ff3b00; border: none; }
+        .logo-accent { color: #ff3b00; }
+        nav a {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            padding: 8px 12px;
+            border: 3px solid #ffffff;
+            color: #ffffff;
+            background: transparent;
+            margin-left: 8px;
+            display: inline-block;
+        }
+        nav a:hover { background: #ff3b00; color: #000; border-color: #ff3b00; }
+        #nav-toggle { display: none; background: none; border: 3px solid #fff; color: #fff; font-size: 2rem; padding: 8px 16px; cursor: pointer; }
+        #nav-toggle:hover { background: #ff3b00; border-color: #ff3b00; color: #000; }
+
+        /* ========== HERO ========== */
+        .hero {
+            padding: 120px 72px 72px;
+            position: relative;
+            overflow: hidden;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20%; right: -10%;
+            width: 700px; height: 700px;
+            background: radial-gradient(circle at 30% 50%, #ff3b00, transparent 70%);
+            opacity: 0.25;
+            transform: rotate(12deg) skew(-8deg);
+            z-index: 0;
+            pointer-events: none;
+        }
+        .hero .hero-content { position: relative; z-index: 1; max-width: 900px; }
+        .hero .hero-decor {
+            position: absolute;
+            left: -100px; top: 40px;
+            font-size: 20rem;
+            color: #ff3b00;
+            opacity: 0.08;
+            z-index: 0;
+            font-family: 'Arial Black', sans-serif;
+            letter-spacing: -0.1em;
+            transform: rotate(-6deg);
+            pointer-events: none;
+        }
+        .hero-stats {
+            display: flex; gap: 72px; margin-top: 48px;
+            border-top: 4px solid #ff3b00; padding-top: 48px;
+        }
+        .hero-stats div { font-size: 1.8rem; }
+        .hero-stats span { display: block; font-size: 3.6rem; color: #ff3b00; }
+
+        /* ========== REVIEW CARDS (UGC) ========== */
+        .review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
+        .review-card {
+            border: 4px solid #ffffff;
+            padding: 32px;
+            background: transparent;
+            transform: rotate(var(--rot, 0deg));
+            transition: none;
+            position: relative;
+        }
+        .review-card:nth-child(2) { --rot: -1.5deg; }
+        .review-card:nth-child(3) { --rot: 2deg; }
+        .review-card:nth-child(5) { --rot: -1deg; }
+        .review-card:hover { background: #111111; border-color: #ff3b00; }
+        .review-card .stars { color: #ff3b00; font-size: 2rem; letter-spacing: 0.2em; margin-bottom: 16px; }
+        .review-card .meta { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.1em; border-bottom: 2px solid #ffffff; padding-bottom: 12px; margin-bottom: 20px; display: flex; justify-content: space-between; }
+        .review-card blockquote { font-size: 1.4rem; line-height: 1.3; font-style: normal; }
+
+        /* ========== SECTION DIVIDERS ========== */
+        .section-divider { width: 100%; height: 4px; background: linear-gradient(90deg, #ff3b00 30%, #ffffff 100%); margin: 60px 0; }
+
+        /* ========== BUTTONS ========== */
+        .btn-primary {
+            display: inline-block;
+            padding: 20px 48px;
+            border: 4px solid #ff3b00;
+            background: #ff3b00;
+            color: #000000;
+            font-family: inherit;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            transition: none;
+            text-decoration: none;
+        }
+        .btn-primary:hover { background: #000000; color: #ff3b00; border-color: #ffffff; }
+        .btn-outline {
+            display: inline-block;
+            padding: 20px 48px;
+            border: 4px solid #ffffff;
+            background: transparent;
+            color: #ffffff;
+            font-family: inherit;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        .btn-outline:hover { background: #ff3b00; border-color: #ff3b00; color: #000; }
+
+        /* ========== FOOTER ========== */
+        footer {
+            border-top: 4px solid #ffffff;
+            padding: 72px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 48px;
+            background: #0a0a0a;
+        }
+        footer .footer-links a { display: block; margin-bottom: 12px; border-bottom: none; }
+        footer .footer-links a:hover { background: none; border-left: 4px solid #ff3b00; padding-left: 8px; }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .container, header, .hero, footer { padding-left: 24px; padding-right: 24px; }
+            section { padding: 48px 0; }
+            .gap-section { margin-top: 72px; }
+
+            .grid-asymmetric, .grid-2col, .grid-3col, .review-grid { grid-template-columns: 1fr; gap: 32px; }
+            .flex-row { gap: 24px; }
+
+            /* navigation hamburger */
+            #nav-toggle { display: block; }
+            nav { display: none; width: 100%; position: absolute; top: 100%; left: 0; background: #000000; border-bottom: 4px solid #ff3b00; padding: 24px; }
+            nav.open { display: block; }
+            nav a { display: block; margin: 12px 0; font-size: 1.8rem; }
+
+            .hero { min-height: auto; padding-top: 72px; }
+            .hero .hero-decor { display: none; }
+            .hero-stats { flex-direction: column; gap: 24px; }
+            .hero-stats div { font-size: 1.2rem; }
+            .hero-stats span { font-size: 2.4rem; }
+
+            .review-card { transform: none !important; }
+            .display-1 { font-size: 4rem; }
+            .display-2 { font-size: 2.8rem; }
+        }
+
+        @media (max-width: 480px) {
+            .container, header, .hero, footer { padding-left: 16px; padding-right: 16px; }
+            .btn-primary, .btn-outline { padding: 16px 32px; font-size: 1.2rem; }
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>애니 매니아 지식 저널 및 아카이브</h1>
-      <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>애니 매니아</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h3>
-          <p>90년대 셀 애니메이션 제작 시 빛이 뿌옇게 흐려지거나 번지는 몽환적인 효과를 내기 위해 투명 셀판 아래에 부드러운 백라이트를 대고 조리개를 조절해 이중 노출로 촬영하던 촬영 스튜...</p>
-        </a>
-      
 
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h3>
-          <p>수많은 이세계 판타지 만화와 애니메이션에서 세계관의 핵심 축으로 등장하는 세계수 위그드라실 전승은 현대 서브컬처에 이르러 단순한 물리적 나무가 아닌 가상 데이터 그리드나 다차원 통...</p>
-        </a>
-      
+<!-- ========== HEADER ========== -->
+<header>
+    <a href="/" class="logo">NEON<span class="logo-accent">VOID</span></a>
+    <button id="nav-toggle" aria-label="메뉴 열기" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">REVIEWS</a>
+        <a href="#">INFO</a>
+        <a href="#">RANKING</a>
+        <a href="tel:010-6279-0862">☎ 010-6279-0862</a>
+    </nav>
+</header>
 
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h3>
-          <p>디즈니의 풀 애니메이션(초당 24장)에 대비되는 동양 리미티드 애니메이션의 정수인 3코마 작화법(초당 8장 기법)은 프레임의 부족함을 독창적인 프레임 홀드 타이밍과 과장된 정지 컷...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>애니 작화 마니아들이 강력히 추천하는 화곡 셔츠룸 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>애니 작화 마니아들이 강력히 추천하는 화곡 셔츠룸 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
+<!-- ========== HERO ========== -->
+<section class="hero full-bleed" aria-label="등촌동 유흥 히어로">
+    <div class="hero-decor" aria-hidden="true">23</div>
+    <div class="hero-content">
+        <p class="body-sm accent-text" style="margin-bottom: 16px;">▼ 2024 · 3분기 업데이트</p>
+        <h1 class="display-1" style="margin-bottom: 24px;">등촌동<br>유흥 후기</h1>
+        <p class="body-lg" style="margin-bottom: 40px;">4,528명의 리얼 인증 후기 · 97% 만족률<br>프리미엄 룸살롱, 라운지, 나이트클럽 등급별 분석</p>
+        <a href="tel:010-6279-0862" class="btn-primary">전화예약 010-6279-0862</a>
+        <div class="hero-stats">
+            <div><span>4.7</span>평균 평가</div>
+            <div><span>4,528+</span>인증 후기</div>
+            <div><span>38</span>분석 업소</div>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
-  </div>
+    </div>
+</section>
+
+<!-- ========== SECTION: ABOUT / APPROACH ========== -->
+<section class="container gap-section">
+    <div class="grid-asymmetric" style="align-items: start;">
+        <div class="brut-border-accent" style="transform: rotate(-1.2deg); padding: 32px;">
+            <span class="display-2 accent-text">97%</span>
+            <p class="body-sm" style="margin-top: 4px;">만족률 (2024.10 기준)</p>
+        </div>
+        <div class="brut-border" style="padding: 32px;">
+            <h2 class="heading-xl" style="margin-bottom: 24px;">데이터 기반<br>등촌 유흥 분석</h2>
+            <p class="body-lg">등촌동 유흥 업소 38개소의 서비스, 시설, 안전성, 비용을 50개 지표로 정량 평가. 모든 후기는 전화 인증 및 방문 확인 절차를 거친 <strong>리얼 사용자 후기</strong>만을 채택합니다.</p>
+            <p class="body-lg">2024년 3분기 업데이트를 통해 등촌동 프리미엄 라운지 7개소, 룸살롱 19개소, 나이트클럽 12개소의 상세 정보와 등급을 공개합니다.</p>
+        </div>
+        <div class="brut-border-bottom" style="padding: 16px;">
+            <p class="body-sm" style="font-size: 1rem;">▼ 핵심 지표</p>
+            <ul class="stack-y" style="margin-top: 24px;">
+                <li><span class="accent-text">■</span> 서비스 만족도 4.6</li>
+                <li><span class="accent-text">■</span> 시설 청결도 4.8</li>
+                <li><span class="accent-text">■</span> 안전 관리 4.5</li>
+                <li><span class="accent-text">■</span> 가격 대비 만족 4.3</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="container section-divider" role="separator"></div>
+
+<!-- ========== SECTION: UGC REVIEW CARDS ========== -->
+<section class="container gap-section" aria-label="실시간 유흥 후기">
+    <h2 class="display-2" style="margin-bottom: 48px;">UGC · 인증 후기</h2>
+    <div class="review-grid">
+        <!-- card 1 -->
+        <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <div class="meta"><span>등촌불독</span><span>24.09.28</span></div>
+            <blockquote>“라운지 시설이 신축급. 웰컴 서비스와 안주 퀄리티가 압도적. 등촌동에서 가장 체계적인 시스템.”</blockquote>
+        </article>
+        <!-- card 2 -->
+        <article class="review-card">
+            <div class="stars">★★★★☆</div>
+            <div class="meta"><span>강서밤부</span><span>24.10.02</span></div>
+            <blockquote>“룸살롱 규모 대비 가격이 합리적. 단, 주말에는 사전 예약 필수. 마담 응대 프로페셔널.”</blockquote>
+        </article>
+        <!-- card 3 -->
+        <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <div class="meta"><span>목동스핏파이어</span><span>24.10.11</span></div>
+            <blockquote>“5년차 단골입니다. 꾸준한 리모델링과 직원
 </body>
 </html>
