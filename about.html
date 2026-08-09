@@ -1,143 +1,146 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <title>등촌동 유흥 정보 – 등촌 유흥 후기 & 프리미엄 분석</title>
-    <meta name="description" content="등촌동 유흥 업소 실사용자 4,500+명의 리얼 후기, 97% 만족률. 2024년 3분기 업데이트 된 등촌 유흥 정보와 프리미엄 라운지, 룸살롱 등급별 분석을 제공합니다. 전화 010-6279-0862.">
-    <meta name="keywords" content="등촌동 유흥 후기, 등촌 유흥, 등촌동 룸살롱, 등촌 유흥 정보, 등촌동 나이트, 등촌동 유흥 추천, 등촌동 프리미엄 유흥">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://deungchon-room-review.hardcoreroom.com/about.html">
-    <meta name="naver-site-verification" content="">
-    <style>
-        /* ========== RESET & BASE ========== */
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        html { font-size: 16px; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-        body { font-family: 'Noto Sans KR', system-ui, 'Apple SD Gothic Neo', sans-serif; background: #0b0a0d; color: #e0dcd5; line-height: 1.7; min-height: 100vh; }
-        a { color: #f05454; text-decoration: none; transition: color 0.2s; }
-        a:hover { color: #ff7b7b; }
-        a:active { color: #c73a3a; }
-        img, svg { display: block; max-width: 100%; height: auto; }
-        h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.25; letter-spacing: -0.02em; color: #f5f3ef; }
-        p { margin-bottom: 1rem; }
-        ul { list-style: none; }
-        /* ========== UTILITY ========== */
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-        .full-bleed { width: 100vw; margin-left: calc(50% - 50vw); }
-        /* ========== TYPOGRAPHY ========== */
-        .heading-xl { font-size: clamp(2rem, 5.5vw, 3.75rem); font-weight: 800; letter-spacing: -0.03em; }
-        .heading-lg { font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 700; }
-        .heading-md { font-size: clamp(1.2rem, 2.5vw, 1.75rem); }
-        .text-muted { color: #9a958d; }
-        .text-accent { color: #f05454; }
-        .text-center { text-align: center; }
-        /* ========== LAYOUT ========== */
-        .grid-2, .grid-3 { display: grid; gap: 2rem; }
-        .grid-2 { grid-template-columns: repeat(2, 1fr); }
-        .grid-3 { grid-template-columns: repeat(3, 1fr); }
-        .flex-row { display: flex; flex-wrap: wrap; align-items: center; }
-        /* ========== NAVIGATION ========== */
-        .site-nav { position: sticky; top: 0; z-index: 100; background: #0b0a0d; border-bottom: 1px solid #2a282e; padding: 0.75rem 0; }
-        .site-nav .container { display: flex; justify-content: space-between; align-items: center; }
-        .site-nav .logo { font-size: 1.25rem; font-weight: 800; color: #f5f3ef; letter-spacing: -0.02em; }
-        .site-nav .nav-links { display: flex; gap: 2rem; }
-        .site-nav .nav-links a { font-size: 0.9rem; font-weight: 500; color: #b0aba0; transition: color 0.2s; }
-        .site-nav .nav-links a:hover { color: #f05454; }
-        .hamburger-menu { display: none; flex-direction: column; cursor: pointer; padding: 0.25rem; }
-        .hamburger-menu span { display: block; width: 24px; height: 2px; background: #f5f3ef; margin: 3px 0; transition: 0.2s; }
-        /* ========== HERO ========== */
-        .hero { padding: 4rem 0 3rem; background: radial-gradient(ellipse at 20% 50%, #1a151f 0%, #0b0a0d 70%); }
-        .hero h1 { max-width: 900px; margin-bottom: 1.5rem; }
-        .hero p { font-size: 1.1rem; max-width: 700px; color: #b0aba0; }
-        .hero .stat-badge { display: inline-block; background: #1e1a24; border: 1px solid #f0545433; border-radius: 100px; padding: 0.4rem 1.2rem; font-size: 0.85rem; color: #f05454; font-weight: 600; margin-bottom: 1.5rem; }
-        /* ========== KEY INFO GRID ========== */
-        .info-grid { padding: 3rem 0; }
-        .info-card { background: #121016; border: 1px solid #2a282e; border-radius: 12px; padding: 2rem; transition: border-color 0.2s; }
-        .info-card:hover { border-color: #f0545440; }
-        .info-card .card-number { font-size: 2rem; font-weight: 800; color: #f05454; line-height: 1; margin-bottom: 0.75rem; }
-        .info-card h3 { margin-bottom: 0.75rem; }
-        .info-card p { color: #9a958d; margin-bottom: 0; }
-        /* ========== RANKING / GRADE SECTION ========== */
-        .ranking-section { padding: 3rem 0; }
-        .ranking-table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
-        .ranking-table th, .ranking-table td { padding: 1rem 1.25rem; text-align: left; border-bottom: 1px solid #2a282e; }
-        .ranking-table th { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #605a52; font-weight: 600; }
-        .ranking-table td { color: #e0dcd5; }
-        .ranking-table tr:hover td { background: #16141b; }
-        .grade-star { color: #f0b429; margin-right: 0.25rem; }
-        /* ========== FAQ ========== */
-        .faq-section { padding: 3rem 0; }
-        .faq-item { border-bottom: 1px solid #2a282e; padding: 1.25rem 0; }
-        .faq-question { font-weight: 600; font-size: 1.1rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-        .faq-question::after { content: '+'; font-size: 1.5rem; color: #f05454; }
-        .faq-answer { margin-top: 0.75rem; color: #9a958d; line-height: 1.6; }
-        /* ========== CTA ========== */
-        .cta-section { background: linear-gradient(135deg, #121016 0%, #1a151f 100%); border: 1px solid #f0545420; border-radius: 16px; padding: 3rem; text-align: center; margin: 3rem 0; }
-        .cta-section h2 { margin-bottom: 1rem; }
-        .cta-section .tel-link { display: inline-block; font-size: 1.5rem; font-weight: 800; color: #f05454; background: #1e1a24; padding: 0.75rem 2.5rem; border-radius: 50px; border: 1px solid #f0545433; transition: 0.2s; }
-        .cta-section .tel-link:hover { background: #2a2430; border-color: #f0545466; }
-        /* ========== FOOTER ========== */
-        .site-footer { border-top: 1px solid #2a282e; padding: 2rem 0; margin-top: 4rem; font-size: 0.85rem; color: #605a52; text-align: center; }
-        /* ========== RESPONSIVE ========== */
-        @media (max-width: 768px) {
-            .site-nav .nav-links { display: none; }
-            .hamburger-menu { display: flex; }
-            .grid-2, .grid-3 { grid-template-columns: 1fr; gap: 1.5rem; }
-            .cta-section { padding: 2rem 1.5rem; }
-            .cta-section .tel-link { font-size: 1.2rem; padding: 0.6rem 1.8rem; }
-            .ranking-table th, .ranking-table td { padding: 0.75rem 0.5rem; font-size: 0.9rem; }
-        }
-        @media (min-width: 769px) {
-            .hamburger-menu { display: none; }
-            .site-nav .nav-links { display: flex !important; }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ <title>등촌동 유흥 정보 – 등촌 유흥 후기 & 프리미엄 분석</title>
+ <meta name="description" content="등촌동 유흥 업소 실사용자 4,500+명의 리얼 후기, 97% 만족률. 2024년 3분기 업데이트 된 등촌 유흥 정보와 프리미엄 라운지, 룸살롱 등급별 분석을 제공합니다.">
+ <meta name="keywords" content="등촌동 유흥 후기, 등촌 유흥, 등촌동 룸살롱, 등촌 유흥 정보, 등촌동 나이트, 등촌동 유흥 추천, 등촌동 프리미엄 유흥">
+ <meta name="robots" content="index, follow">
+ <link rel="canonical" href="https://deungchon-room-review.hardcoreroom.com/about.html">
+ <meta name="naver-site-verification" content="">
+ <style>
+ /* ========== RESET & BASE ========== */
+ *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+ html { font-size: 16px; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+ body { font-family: 'Noto Sans KR', system-ui, 'Apple SD Gothic Neo', sans-serif; background: #0b0a0d; color: #e0dcd5; line-height: 1.7; min-height: 100vh; }
+ a { color: #f05454; text-decoration: none; transition: color 0.2s; }
+ a:hover { color: #ff7b7b; }
+ a:active { color: #c73a3a; }
+ img, svg { display: block; max-width: 100%; height: auto; }
+ h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.25; letter-spacing: -0.02em; color: #f5f3ef; }
+ p { margin-bottom: 1rem; }
+ ul { list-style: none; }
+ /* ========== UTILITY ========== */
+ .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+ .full-bleed { width: 100vw; margin-left: calc(50% - 50vw); }
+ /* ========== TYPOGRAPHY ========== */
+ .heading-xl { font-size: clamp(2rem, 5.5vw, 3.75rem); font-weight: 800; letter-spacing: -0.03em; }
+ .heading-lg { font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 700; }
+ .heading-md { font-size: clamp(1.2rem, 2.5vw, 1.75rem); }
+ .text-muted { color: #9a958d; }
+ .text-accent { color: #f05454; }
+ .text-center { text-align: center; }
+ /* ========== LAYOUT ========== */
+ .grid-2, .grid-3 { display: grid; gap: 2rem; }
+ .grid-2 { grid-template-columns: repeat(2, 1fr); }
+ .grid-3 { grid-template-columns: repeat(3, 1fr); }
+ .flex-row { display: flex; flex-wrap: wrap; align-items: center; }
+ /* ========== NAVIGATION ========== */
+ .site-nav { position: sticky; top: 0; z-index: 100; background: #0b0a0d; border-bottom: 1px solid #2a282e; padding: 0.75rem 0; }
+ .site-nav .container { display: flex; justify-content: space-between; align-items: center; }
+ .site-nav .logo { font-size: 1.25rem; font-weight: 800; color: #f5f3ef; letter-spacing: -0.02em; }
+ .site-nav .nav-links { display: flex; gap: 2rem; }
+ .site-nav .nav-links a { font-size: 0.9rem; font-weight: 500; color: #b0aba0; transition: color 0.2s; }
+ .site-nav .nav-links a:hover { color: #f05454; }
+ .hamburger-menu { display: none; flex-direction: column; cursor: pointer; padding: 0.25rem; }
+ .hamburger-menu span { display: block; width: 24px; height: 2px; background: #f5f3ef; margin: 3px 0; transition: 0.2s; }
+ /* ========== HERO ========== */
+ .hero { padding: 4rem 0 3rem; background: radial-gradient(ellipse at 20% 50%, #1a151f 0%, #0b0a0d 70%); }
+ .hero h1 { max-width: 900px; margin-bottom: 1.5rem; }
+ .hero p { font-size: 1.1rem; max-width: 700px; color: #b0aba0; }
+ .hero .stat-badge { display: inline-block; background: #1e1a24; border: 1px solid #f0545433; border-radius: 100px; padding: 0.4rem 1.2rem; font-size: 0.85rem; color: #f05454; font-weight: 600; margin-bottom: 1.5rem; }
+ /* ========== KEY INFO GRID ========== */
+ .info-grid { padding: 3rem 0; }
+ .info-card { background: #121016; border: 1px solid #2a282e; border-radius: 12px; padding: 2rem; transition: border-color 0.2s; }
+ .info-card:hover { border-color: #f0545440; }
+ .info-card .card-number { font-size: 2rem; font-weight: 800; color: #f05454; line-height: 1; margin-bottom: 0.75rem; }
+ .info-card h3 { margin-bottom: 0.75rem; }
+ .info-card p { color: #9a958d; margin-bottom: 0; }
+ /* ========== RANKING / GRADE SECTION ========== */
+ .ranking-section { padding: 3rem 0; }
+ .ranking-table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+ .ranking-table th, .ranking-table td { padding: 1rem 1.25rem; text-align: left; border-bottom: 1px solid #2a282e; }
+ .ranking-table th { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #605a52; font-weight: 600; }
+ .ranking-table td { color: #e0dcd5; }
+ .ranking-table tr:hover td { background: #16141b; }
+ .grade-star { color: #f0b429; margin-right: 0.25rem; }
+ /* ========== FAQ ========== */
+ .faq-section { padding: 3rem 0; }
+ .faq-item { border-bottom: 1px solid #2a282e; padding: 1.25rem 0; }
+ .faq-question { font-weight: 600; font-size: 1.1rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+ .faq-question::after { content: '+'; font-size: 1.5rem; color: #f05454; }
+ .faq-answer { margin-top: 0.75rem; color: #9a958d; line-height: 1.6; }
+ /* ========== CTA ========== */
+ .cta-section { background: linear-gradient(135deg, #121016 0%, #1a151f 100%); border: 1px solid #f0545420; border-radius: 16px; padding: 3rem; text-align: center; margin: 3rem 0; }
+ .cta-section h2 { margin-bottom: 1rem; }
+ .cta-section .tel-link { display: inline-block; font-size: 1.5rem; font-weight: 800; color: #f05454; background: #1e1a24; padding: 0.75rem 2.5rem; border-radius: 50px; border: 1px solid #f0545433; transition: 0.2s; }
+ .cta-section .tel-link:hover { background: #2a2430; border-color: #f0545466; }
+ /* ========== FOOTER ========== */
+ .site-footer { border-top: 1px solid #2a282e; padding: 2rem 0; margin-top: 4rem; font-size: 0.85rem; color: #605a52; text-align: center; }
+ /* ========== RESPONSIVE ========== */
+ @media (max-width: 768px) {
+ .site-nav .nav-links { display: none; }
+ .hamburger-menu { display: flex; }
+ .grid-2, .grid-3 { grid-template-columns: 1fr; gap: 1.5rem; }
+ .cta-section { padding: 2rem 1.5rem; }
+ .cta-section .tel-link { font-size: 1.2rem; padding: 0.6rem 1.8rem; }
+ .ranking-table th, .ranking-table td { padding: 0.75rem 0.5rem; font-size: 0.9rem; }
+ }
+ @media (min-width: 769px) {
+ .hamburger-menu { display: none; }
+ .site-nav .nav-links { display: flex !important; }
+ }
+ </style>
+  <meta property="og:url" content="https://deungchon-room-review.hardcoreroom.com/about.html">
+  <meta property="og:title" content="등촌동 유흥 정보 – 등촌 유흥 후기 &amp; 프리미엄 분석">
+  <meta property="og:description" content="등촌동 유흥 업소 실사용자 4,500+명의 리얼 후기, 97% 만족률. 2024년 3분기 업데이트 된 등촌 유흥 정보와 프리미엄 라운지, 룸살롱 등급별 분석을 제공합니다.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <nav class="site-nav" role="navigation">
-        <div class="container">
-            <div class="logo">등촌유흥</div>
-            <ul class="nav-links">
-                <li><a href="/">홈</a></li>
-                <li><a href="/info">정보</a></li>
-                <li><a href="/review">후기</a></li>
-                <li><a href="/ranking">순위</a></li>
-                <li><a href="tel:010-6279-0862" class="tel-link">문의</a></li>
-            </ul>
-            <div class="hamburger-menu" aria-label="메뉴 열기" role="button" tabindex="0">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-    </nav>
+ <nav class="site-nav" role="navigation">
+ <div class="container">
+ <div class="logo">등촌유흥</div>
+ <ul class="nav-links">
+ <li><a href="/">홈</a></li>
+ <li><a href="/info">정보</a></li>
+ <li><a href="/review">후기</a></li>
+ <li><a href="/ranking">순위</a></li>
+ 
+ </ul>
+ <div class="hamburger-menu" aria-label="메뉴 열기" role="button" tabindex="0">
+ 
+ </div>
+ </div>
+ </nav>
 
-    <section class="hero">
-        <div class="container">
-            <span class="stat-badge">실사용자 4,500+ 후기 · 97% 만족률</span>
-            <h1 class="heading-xl">등촌동 유흥,<br>등급별 데이터로 분석하다</h1>
-            <p>2024년 3분기 기준 등촌 지역 프리미엄 라운지, 룸살롱, 나이트업소의 실제 이용자 평가와 객관적 지표를 제공합니다. 각 업소의 서비스, 시설, 가격 대비 만족도를 체계적으로 정리했습니다.</p>
-        </div>
-    </section>
+ <section class="hero">
+ <div class="container">
+ <span class="stat-badge">실사용자 4,500+ 후기 · 97% 만족률</span>
+ <h1 class="heading-xl">등촌동 유흥,<br>등급별 데이터로 분석하다</h1>
+ <p>2024년 3분기 기준 등촌 지역 프리미엄 라운지, 룸살롱, 나이트업소의 실제 이용자 평가와 객관적 지표를 제공합니다. 각 업소의 서비스, 시설, 가격 대비 만족도를 체계적으로 정리했습니다.</p>
+ </div>
+ </section>
 
-    <section class="info-grid">
-        <div class="container">
-            <div class="grid-3">
-                <div class="info-card">
-                    <div class="card-number">4,500+</div>
-                    <h3 class="heading-md">검증된 리얼 후기</h3>
-                    <p>등촌동 유흥 업소를 직접 방문한 회원들의 리뷰만을 취합, 허위 광고 없는 데이터베이스를 구축했습니다.</p>
-                </div>
-                <div class="info-card">
-                    <div class="card-number">97%</div>
-                    <h3 class="heading-md">만족률 달성</h3>
-                    <p>이용자 만족도 조사 결과 재방문 의사가 있다고 응답한 비율. 업종 평균 대비 12%p 높은 수치입니다.</p>
-                </div>
-                <div class="info-card">
-                    <div class="card-number">8개</div>
-                    <h3 class="heading-md">평가 카테고리</h3>
-                    <p>시설 · 서비스 · 안전 · 위생 · 가격 · 접근성 · 프라이버시 · 분위기 등 다각도로 분석했습니다.</p>
-                </div>
-            </div>
+ <section class="info-grid">
+ <div class="container">
+ <div class="grid-3">
+ <div class="info-card">
+ <div class="card-number">4,500+</div>
+ <h3 class="heading-md">검증된 리얼 후기</h3>
+ <p>등촌동 유흥 업소를 직접 방문한 회원들의 리뷰만을 취합, 허위 광고 없는 데이터베이스를 구축했습니다.</p>
+ </div>
+ <div class="info-card">
+ <div class="card-number">97%</div>
+ <h3 class="heading-md">만족률 달성</h3>
+ <p>이용자 만족도 조사 결과 재방문 의사가 있다고 응답한 비율. 업종 평균 대비 12%p 높은 수치입니다.</p>
+ </div>
+ <div class="info-card">
+ <div class="card-number">8개</div>
+ <h3 class="heading-md">평가 카테고리</h3>
+ <p>시설 · 서비스 · 안전 · 위생 · 가격 · 접근성 · 프라이버시 · 분위기 등 다각도로 분석했습니다.</p>
+ </div>
+ </div>
 </body>
 </html>
